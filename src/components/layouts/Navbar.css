@@ -1,0 +1,34 @@
+.dropdown-item:hover {
+  background: orange !important;
+}
+
+.nav-link:hover {
+  color: orange!important;
+}
+
+.btn {
+  border-color: orange !important;
+  color: orange !important;
+}
+
+.btn:hover {
+  background: orange !important;
+  color: white !important;
+}
+
+.navbar-toggler {
+  outline: none !important;
+  border-color: orange;
+}
+
+/* body {
+  padding-top: 0px;
+  width: 100%;
+  
+} */
+body {
+  background-image: url(../assets/img10.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
