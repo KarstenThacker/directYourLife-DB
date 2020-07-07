@@ -3,12 +3,17 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Bookshelf } from './components/bookshelf'
+import { render } from 'react-dom'
+import './styles/styles.css'
 
 ReactDOM.render(
   <Router>
     <App />
+    <Bookshelf />
   </Router>,
   document.getElementById('root')
+
 );
 
 // // // Import deps
