@@ -2,13 +2,13 @@
 import React from 'react'
 
 // Import components
-import { ClientListRow } from './client-list-row'
+import { BookshelfListRow } from './bookshelf-list-row'
 
 // Import styles
-//import './../styles/bookshelf-list.css'
+import './../styles/bookshelf-list.css'
 
 // Create interfaces
-interface ClientUI {
+interface BookUI {
   id: number;
   author: string;
   title: string;
@@ -16,14 +16,14 @@ interface ClientUI {
   rating: string;
 }
 
-interface ClientListUI {
-  clients: ClientUI[];
+interface BookshelfListUI {
+  books: BookUI[];
   loading: boolean;
-  handleClientRemove: (id: number, title: string) => void;
+  handleBookRemove: (id: number, title: string) => void;
 }
 
 // Create BookshelfList component
-export const ClientList = (props: ClientListUI) => {
+export const BookshelfList = (props: BookshelfListUI) => {
   // Show loading message
   if (props.loading) return <p>Leaderboard table is loading...</p>
 
@@ -45,14 +45,14 @@ export const ClientList = (props: ClientListUI) => {
           </tr>
         </thead>
 
-        {/* <tbody className="table-body">
-          {props.clients.length > 0 ? (
-            props.clients.map((client: ClientUI, idx) => (
-              <ClientListRow
-                key={client.id}
-                client={client}
+        <tbody className="table-body">
+          {props.books.length > 0 ? (
+            props.books.map((book: BookUI, idx) => (
+              <BookshelfListRow
+                key={book.id}
+                book={book}
                 position={idx + 1}
-                handleClientRemove={props.handleClientRemove}
+                handleBookRemove={props.handleBookRemove}
               />
               )
             )
@@ -62,7 +62,7 @@ export const ClientList = (props: ClientListUI) => {
             </tr>
           )
         }
-        </tbody> */}
+        </tbody>
     </table>
   )
 }

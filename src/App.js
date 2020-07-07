@@ -20,6 +20,7 @@ import Layout from './components/layouts/Layout';
 import './components/pages/Pages.css';
 import Banner  from './components/layouts/Banner';
 
+
 function App() {
   return (
     <div>

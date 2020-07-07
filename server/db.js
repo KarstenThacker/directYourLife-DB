@@ -1,7 +1,9 @@
 // Import path module
 const path = require('path')
+
 // Get the location of database.sqlite file
-const dbPath = path.resolve(__dirname, 'db/dyldatabase.sqlite')
+const dbPath = path.resolve(__dirname, 'db/database.sqlite')
+
 // Create connection to SQLite database
 const knex = require('knex')({
   client: 'sqlite3',
@@ -10,11 +12,12 @@ const knex = require('knex')({
   },
   useNullAsDefault: true
 })
+
 // Create a table in the database called "books"
 knex.schema
   // Make sure no "books" table exists
   // before trying to create new
-  .hasTable('clients')
+  .hasTable('books')
     .then((exists) => {
       if (!exists) {
         // If no "books" table exists
@@ -22,16 +25,16 @@ knex.schema
         // "pubDate" and "rating" columns
         // and use "id" as a primary identification
         // and increment "id" with every new record (book)
-        return knex.schema.createTable('clients', (table)  => {
+        return knex.schema.createTable('books', (table)  => {
           table.increments('id').primary()
-          table.integer('email')
-          table.string('password')
-          table.string('firstName')
-          table.integer('lastName')
+          table.string('author')
+          table.string('title')
+          table.string('pubDate')
+          table.integer('rating')
         })
         .then(() => {
           // Log success message
-          console.log('Table \'Clients\' created')
+          console.log('Table \'Books\' created')
         })
         .catch((error) => {
           console.error(`There was an error creating table: ${error}`)
@@ -45,10 +48,12 @@ knex.schema
     .catch((error) => {
       console.error(`There was an error setting up the database: ${error}`)
     })
+
 // Just for debugging purposes:
 // Log all data in "books" table
-knex.select('*').from('clients')
+knex.select('*').from('books')
   .then(data => console.log('data:', data))
   .catch(err => console.log(err))
+
 // Export the database
 module.exports = knex

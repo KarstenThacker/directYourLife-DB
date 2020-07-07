@@ -2,7 +2,7 @@
 import React from 'react'
 
 // Create interfaces
-interface ClientListRowUI {
+interface BookshelfListRowUI {
   position: number;
   book: {
     id: number;
@@ -14,8 +14,8 @@ interface ClientListRowUI {
   handleBookRemove: (id: number, title: string) => void;
 }
 
-// Create ClientListRow component
-export const ClientListRow = (props: ClientListRowUI) => (
+// Create BookshelfListRow component
+export const BookshelfListRow = (props: BookshelfListRowUI) => (
   <tr className="table-row">
     <td className="table-item">
       {props.position}
