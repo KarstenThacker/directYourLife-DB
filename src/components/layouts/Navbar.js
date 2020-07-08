@@ -97,7 +97,7 @@ const Navbar = () => {
               Login
             </button>
           </Link>
-          <Link className="nav-link" to="/signup">
+          <Link className="nav-link" to="/bookshelf">
           <button
             className="btn btn-outline-success my-2 my-sm-0"
             type="submit">

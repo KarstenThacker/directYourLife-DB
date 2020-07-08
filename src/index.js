@@ -10,7 +10,6 @@ import './styles/styles.css'
 ReactDOM.render(
   <Router>
     <App />
-    <Bookshelf />
   </Router>,
   document.getElementById('root')
 

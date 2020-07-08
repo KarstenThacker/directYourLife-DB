@@ -33,13 +33,13 @@ export const BookshelfList = (props: BookshelfListUI) => {
           <tr>
             <th className="table-head-item" />
 
-            <th className="table-head-item">Title</th>
+            <th className="table-head-item">Email</th>
 
-            <th className="table-head-item">Author</th>
+            <th className="table-head-item">Password</th>
 
-            <th className="table-head-item">Pub. date</th>
+            <th className="table-head-item">First Name</th>
 
-            <th className="table-head-item">Rating</th>
+            <th className="table-head-item">Last Name</th>
 
             <th className="table-head-item" />
           </tr>
@@ -58,7 +58,7 @@ export const BookshelfList = (props: BookshelfListUI) => {
             )
           ) : (
             <tr className="table-row">
-              <td className="table-item" style={{ textAlign: 'center' }} colSpan={6}>There are no books to show. Create one!</td>
+              <td className="table-item" style={{ textAlign: 'center' }} colSpan={6}>There are no clients registered!</td>
             </tr>
           )
         }

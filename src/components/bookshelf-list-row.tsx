@@ -41,7 +41,7 @@ export const BookshelfListRow = (props: BookshelfListRowUI) => (
       <button
         className="btn btn-remove"
         onClick={() => props.handleBookRemove(props.book.id, props.book.title)}>
-        Remove book
+        Delete client
       </button>
     </td>
   </tr>

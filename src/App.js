@@ -19,6 +19,7 @@ import Signup from './components/pages/Signup';
 import Layout from './components/layouts/Layout';
 import './components/pages/Pages.css';
 import Banner  from './components/layouts/Banner';
+import Bookshelf from './components/bookshelf';
 
 
 function App() {
@@ -34,7 +35,8 @@ function App() {
 					<Route path='/resources' component={Resources} />
 					<Route path='/contact' component={Contact} />
 					<Route path='/login' component={Login} />
-					<Route path='/signup' component={Signup} />
+					{/* <Route path='/signup' component={Signup} /> */}
+          <Route path='/bookshelf' component={Bookshelf} />
 					<Route component={PageNotFound} />
         </Switch>
       </Layout>

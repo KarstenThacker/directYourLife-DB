@@ -114,30 +114,30 @@ export const Bookshelf = () => {
         <div className="form-wrapper" onSubmit={handleBookSubmit}>
           <div className="form-row">
             <fieldset>
-              <label className="form-label" htmlFor="title">Enter title:</label>
+              <label className="form-label" htmlFor="title">Email:</label>
               <input className="form-input" type="text" id="title" name="title" value={title} onChange={(e) => setTitle(e.currentTarget.value)} />
             </fieldset>
 
             <fieldset>
-              <label className="form-label" htmlFor="author">Enter author:</label>
+              <label className="form-label" htmlFor="author">Password:</label>
               <input className="form-input" type="text" id="author" name="author" value={author} onChange={(e) => setAuthor(e.currentTarget.value)} />
             </fieldset>
           </div>
 
           <div className="form-row">
             <fieldset>
-              <label className="form-label" htmlFor="pubDate">Enter publication date:</label>
+              <label className="form-label" htmlFor="pubDate">First Name:</label>
               <input className="form-input" type="text" id="pubDate" name="pubDate" value={pubDate} onChange={(e) => setPubDate(e.currentTarget.value)} />
             </fieldset>
 
             <fieldset>
-              <label className="form-label" htmlFor="rating">Enter rating:</label>
+              <label className="form-label" htmlFor="rating">Last Name:</label>
               <input className="form-input" type="text" id="rating" name="rating" value={rating} onChange={(e) => setRating(e.currentTarget.value)} />
             </fieldset>
           </div>
         </div>
 
-        <button onClick={handleBookSubmit} className="btn btn-add">Add the book</button>
+        <button onClick={handleBookSubmit} className="btn btn-add">Add the client</button>
       </div>
 
       {/* Render bookshelf list component */}
@@ -145,8 +145,9 @@ export const Bookshelf = () => {
 
       {/* Show reset button if list contains at least one book */}
       {books.length > 0 && (
-        <button className="btn btn-reset" onClick={handleListReset}>Reset books list.</button>
+        <button className="btn btn-reset" onClick={handleListReset}>Reset client list.</button>
       )}
     </div>
   )
 }
+export default Bookshelf;
