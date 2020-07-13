@@ -17,9 +17,8 @@ function Footer() {
           <div className="row">
             {/* Column 1*/}
             <div className="col-md-3 col-sm-6">
-              <h4 style={{ color: '#FF8C00' }}>DYL</h4>
+              <h4 style={{ color: "#FF8C00" }}>DYL</h4>
               <ul className="list-unstyled">
-              
                 <li>Direct Your Life</li>
                 <li>Street address</li>
                 <li>City, Prov</li>
@@ -28,7 +27,7 @@ function Footer() {
             </div>
             {/* Column 2*/}
             <div className="col-md-2 col-sm-6">
-            <h4 style={{ color: '#FF8C00' }}>Links</h4>
+              <h4 style={{ color: "#FF8C00" }}>Links</h4>
               <ul className="list-unstyled">
                 <li>About </li>
                 <li>Contact</li>
@@ -49,27 +48,47 @@ function Footer() {
             </div>
             {/* Column 4*/}
             <div className="col-md-5 col-sm-6">
-            <h4 style={{ color: '#FF8C00', textAlign: "center" }}>Social Media</h4>
+              <h4 style={{ color: "#FF8C00", textAlign: "center" }}>
+                Social Media
+              </h4>
               <ul className="list-unstyled">
-              <div className="social-container" style={{ textAlign: "center" }}>
-              <a
-                href="https://www.youtube.com/watch?v=eIPu-UPCrd8"
-                className="youtube social">
-                <FontAwesomeIcon icon={faYoutube} size="2x" />
-              </a>
-              <a href="https://www.facebook.com" className="facebook social">
-                <FontAwesomeIcon icon={faFacebook} size="2x" />
-              </a>
-              <a href="https://www.instagram.com" className="instagram social">
-                <FontAwesomeIcon icon={faInstagram} size="2x" />
-              </a>
-              <a href="https://www.twitter.com" className="twitter social">
-                <FontAwesomeIcon icon={faTwitter} size="2x" />
-              </a>
-              <a href="https://www.linkedin.com" className="linkedin social">
-                <FontAwesomeIcon icon={faLinkedin} size="2x" />
-              </a>
-            </div>
+                <div
+                  className="social-container"
+                  style={{ textAlign: "center" }}
+                >
+                  <a
+                    href="https://www.youtube.com/watch?v=eIPu-UPCrd8"
+                    target="_blank"
+                    className="youtube social"
+                  >
+                    <FontAwesomeIcon icon={faYoutube} size="2x" />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/DirectYourLifeCanada/"
+                    target="_blank"
+                    className="facebook social"
+                  >
+                    <FontAwesomeIcon icon={faFacebook} size="2x" />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/directyourlifecanada/"
+                    className="instagram social"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faInstagram} size="2x" />
+                  </a>
+                  <a href="https://twitter.com/dylcanada" className="twitter social"
+                  target="_blank">
+                    <FontAwesomeIcon icon={faTwitter} size="2x" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com"
+                    className="linkedin social"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                  </a>
+                </div>
                 {/* <li>hello world</li>
                 <li>hello world</li>
                 <li>hello world</li>
@@ -83,7 +102,6 @@ function Footer() {
               &copy;{new Date().getFullYear()} Direct Your Life - All Rights
               Reserved
             </p>
-            
           </div>
         </div>
       </div>

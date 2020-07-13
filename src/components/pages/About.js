@@ -4,6 +4,9 @@ import olu from '../assets/olu.png';
 import advisor1 from '../assets/advisor1.png';
 import advisor2 from '../assets/advisor2.png';
 import Jumbotronabout from '../layouts/Jumbotronabout.js';
+import img23 from '../assets/img23.jpg';
+import img24 from '../assets/img24.jpg';
+import img25 from '../assets/img25.jpg';
 
 class About extends Component {
   render() {
@@ -13,6 +16,73 @@ class About extends Component {
         
         <Container fluid className="about">
         <Jumbotronabout />
+
+        <Row>
+            <Col>
+              <h2>What we do?</h2>
+              <p>
+                Direct Your Life is the only support group for offenders in the
+                Greater Toronto Area. We provide a support system to help
+                at-risk youth or recently released offenders find housing,
+                employment and/or schooling support through a variety of
+                coaching programs.
+              </p>
+            </Col>
+
+            <Col>
+              <img
+                src={img23}
+                alt="../assets/img23.jpg"
+                style={{ width: "400px" }}
+              />
+            </Col>
+          </Row>
+          <br />
+          <br />
+
+          <Row>
+            <Col>
+              <h2>Who we are?</h2>
+              <p style={{ fontFamily: "helvetica" }}>
+                We are a non-profit organization in the Greater Toronto Area run
+                by Community Advisors with lived experience navigating the
+                criminal justice system in Canada. All members of our team
+                aspire to empower our participants by providing the tools and
+                mentorship for success.
+              </p>
+            </Col>
+
+            <Col>
+              <img
+                src={img24}
+                alt="../assets/img24.jpg"
+                style={{ width: "400px" }}
+              />
+            </Col>
+          </Row>
+          <br />
+          <br />
+
+          <Row>
+            <Col>
+              <h2>Why we serve?</h2>
+              <p style={{ fontFamily: "helvetica" }}>
+                Our objective is to prevent incarceration and recidivism among
+                at-risk youth and recently released offenders. Our mentorship
+                programs aims to help our participants establish strong
+                leadership skills, meaningful connections as well as help guide
+                them to a healthy and successful integration back to society.
+              </p>
+            </Col>
+
+            <Col>
+              <img
+                src={img25}
+                alt="../assets/img25.jpg"
+                style={{ width: "400px" }}
+              />
+            </Col>
+          </Row>
         
            <Row>
             <Col>

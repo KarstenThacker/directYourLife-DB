@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Container, Row, Col} from 'react-bootstrap';
-import Jumbotronprograms from '../../components/layouts/Jumbotronprograms.js';
+import { Container, Row, Col } from "react-bootstrap";
+import Jumbotronprograms from "../../components/layouts/Jumbotronprograms.js";
 import img23 from "../assets/img23.jpg";
 import img24 from "../assets/img24.jpg";
 import img25 from "../assets/img25.jpg";
@@ -10,33 +10,33 @@ import img34 from "../assets/img34.jpg";
 import img35 from "../assets/img35.jpg";
 
 class Programs extends Component {
-	render() {
-		return (
-			<div>
-                 <Container fluid className="programs">
-                    <Jumbotronprograms />
-				<h2>Programs</h2>
-				<h3>Services Overview</h3>
-				<p>
-					DYL believes that all youth, regardless of their developmental, social
-					and/or psychological needs, are resilient. We know through our many
-					years of experience working with young people and their families –
-					that with support from a range of high quality prevention,
-					intervention and treatment services – young persons, to the best of
-					their abilities, can become contributing members of society and
-					productive citizens. Overview
-				</p>
-				<h3>Programs & Counselling Services</h3>
-				<p>
-					DYL believes that all youth, regardless of their developmental, social
-					and/or psychological needs, are resilient. We know through our many
-					years of experience working with young people and their families –
-					that with support from a range of high quality prevention,
-					intervention and treatment services – young persons, to the best of
-					their abilities, can become contributing members of society and
-					productive citizens. Overview
-				</p>
-				<h2 fluid className="h2">
+  render() {
+    return (
+      <div>
+        <Container fluid className="programs">
+          <Jumbotronprograms />
+          <h2>Programs</h2>
+          <h3>Services Overview</h3>
+          <p>
+            DYL believes that all youth, regardless of their developmental,
+            social and/or psychological needs, are resilient. We know through
+            our many years of experience working with young people and their
+            families – that with support from a range of high quality
+            prevention, intervention and treatment services – young persons, to
+            the best of their abilities, can become contributing members of
+            society and productive citizens. Overview
+          </p>
+          <h3>Programs & Counselling Services</h3>
+          <p>
+            DYL believes that all youth, regardless of their developmental,
+            social and/or psychological needs, are resilient. We know through
+            our many years of experience working with young people and their
+            families – that with support from a range of high quality
+            prevention, intervention and treatment services – young persons, to
+            the best of their abilities, can become contributing members of
+            society and productive citizens. Overview
+          </p>
+          <h2 fluid className="h2">
             Services
           </h2>
 
@@ -68,7 +68,7 @@ class Programs extends Component {
           <br />
           <br />
 
-          <Row>
+          {/* <Row>
             <Col>
               <h2>What we do?</h2>
               <p>
@@ -94,7 +94,7 @@ class Programs extends Component {
           <Row>
             <Col>
               <h2>Who we are?</h2>
-              <p style={{fontFamily:'helvetica'}}>
+              <p style={{ fontFamily: "helvetica" }}>
                 We are a non-profit organization in the Greater Toronto Area run
                 by Community Advisors with lived experience navigating the
                 criminal justice system in Canada. All members of our team
@@ -117,7 +117,7 @@ class Programs extends Component {
           <Row>
             <Col>
               <h2>Why we serve?</h2>
-              <p style={{fontFamily:'helvetica'}}>
+              <p style={{ fontFamily: "helvetica" }}>
                 Our objective is to prevent incarceration and recidivism among
                 at-risk youth and recently released offenders. Our mentorship
                 programs aims to help our participants establish strong
@@ -133,7 +133,7 @@ class Programs extends Component {
                 style={{ width: "400px" }}
               />
             </Col>
-          </Row>
+          </Row> */}
           <br />
           <br />
 
@@ -225,30 +225,17 @@ class Programs extends Component {
           <br />
           <br />
           <Row>
-            <Col>
-              <h2>Community Builders</h2>
-              <p>
-                In association with our partner Crosslinks Transit, we are
-                preparing underrepresented populations for jobs in the
-                construction industry.
-              </p>
-            </Col>
+            <Col></Col>
 
-            <Col>
-              <img
-                src={img35}
-                alt="../assets/img35.jpg"
-                style={{ width: "400px" }}
-              />
-            </Col>
+            <Col></Col>
           </Row>
           <br />
           <br />
-                </Container>
-                <br></br>
-			</div>
-		);
-	}
+        </Container>
+        <br></br>
+      </div>
+    );
+  }
 }
 
 export default Programs;

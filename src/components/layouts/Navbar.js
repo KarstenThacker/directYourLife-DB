@@ -30,16 +30,17 @@ const Navbar = () => {
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mx-auto">
-          <li className="nav-item active">
-            <Link className="nav-link" to="/">
+          <li className="nav-item">
+            <Link className="nav-link active" to="/"> 
               <FontAwesomeIcon icon={faHome} />
-              &nbsp; Home <span className="sr-only">(current)</span>
+              &nbsp; Home 
+              <span className="sr-only">(current)</span>
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/about">
               <FontAwesomeIcon icon={faAddressCard} />
-              &nbsp; About
+              &nbsp; About 
             </Link>
           </li>
           <li className='nav-item'>
@@ -49,10 +50,10 @@ const Navbar = () => {
 						</Link>
 					</li>
 					<li className='nav-item'>
-						<Link className='nav-link' to='/Resources'>
+						{/* <Link className='nav-link' to='/Resources'>
 							<FontAwesomeIcon icon={faQuestionCircle} />
 							&nbsp; Resources
-						</Link>
+						</Link> */}
 					</li>
           <li className="nav-item">
             <Link className="nav-link" to="/contact">
@@ -70,7 +71,7 @@ const Navbar = () => {
               aria-haspopup="true"
               aria-expanded="false">
                 <FontAwesomeIcon icon={faNewspaper} />
-                &nbsp; News
+                &nbsp; Level 2
             </Link>
             <div
               className="dropdown-menu bg-dark"
@@ -78,9 +79,10 @@ const Navbar = () => {
               <Link className="dropdown-item text-white" href="#">
                Legal Updates
               </Link>
-              <Link className="dropdown-item text-white" href="#">
-               Blog
-              </Link>
+              <Link className='nav-link' to='/Resources'>
+							<FontAwesomeIcon icon={faQuestionCircle} />
+							&nbsp; Resources
+						</Link>
               <div className="dropdown-divider"></div>
               <Link className="dropdown-item text-white" href="#">
                 Videos
