@@ -38,13 +38,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/about">
+            <Link className="nav-link active" to="/about">
               <FontAwesomeIcon icon={faAddressCard} />
               &nbsp; About 
             </Link>
           </li>
           <li className='nav-item'>
-						<Link className='nav-link' to='/Programs'>
+						<Link className='nav-link active' to='/Programs'>
 							<FontAwesomeIcon icon={faHandsHelping} />
 							&nbsp; Programs
 						</Link>
@@ -56,14 +56,14 @@ const Navbar = () => {
 						</Link> */}
 					</li>
           <li className="nav-item">
-            <Link className="nav-link" to="/contact">
+            <Link className="nav-link active" to="/contact">
               <FontAwesomeIcon icon={faAddressBook} />
               &nbsp; Contact
             </Link>
           </li>
           <li className="nav-item dropdown">
             <Link
-              className="nav-link dropdown-toggle"
+              className="nav-link active dropdown-toggle"
               href="#"
               id="navbarDropdown"
               role="button"
