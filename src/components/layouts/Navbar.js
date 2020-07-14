@@ -4,9 +4,10 @@ import {
   faHome,
   faAddressCard,
   faAddressBook,
+  faTasks,
   faHandsHelping,
   faQuestionCircle,
-  faNewspaper,
+  faWindowRestore,
 } from '@fortawesome/free-solid-svg-icons';
 import logo from '../assets/dyi.png';
 import { Link } from 'react-router-dom';
@@ -45,8 +46,14 @@ const Navbar = () => {
           </li>
           <li className='nav-item'>
 						<Link className='nav-link active' to='/Programs'>
-							<FontAwesomeIcon icon={faHandsHelping} />
+							<FontAwesomeIcon icon={faTasks} />
 							&nbsp; Programs
+						</Link>
+					</li>
+          <li className='nav-item'>
+						<Link className='nav-link active' to='/mentor'>
+							<FontAwesomeIcon icon={faHandsHelping} />
+							&nbsp; Become a Mentor
 						</Link>
 					</li>
 					<li className='nav-item'>
@@ -70,23 +77,23 @@ const Navbar = () => {
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false">
-                <FontAwesomeIcon icon={faNewspaper} />
+                <FontAwesomeIcon icon={faWindowRestore} />
                 &nbsp; Level 2
             </Link>
             <div
               className="dropdown-menu bg-dark"
               aria-labelledby="navbarDropdown">
-              <Link className="dropdown-item text-white" href="#">
-               Legal Updates
+              <Link className="nav-link" to='/L2LandingPage'>
+               L2 Landing Page
               </Link>
               <Link className='nav-link' to='/Resources'>
-							<FontAwesomeIcon icon={faQuestionCircle} />
-							&nbsp; Resources
+							{/* <FontAwesomeIcon icon={faQuestionCircle} /> */}
+							
 						</Link>
-              <div className="dropdown-divider"></div>
-              <Link className="dropdown-item text-white" href="#">
+              {/* <div className="dropdown-divider"></div> */}
+              {/* <Link className="dropdown-item text-white" href="#">
                 Videos
-              </Link>
+              </Link> */}
             </div>
           </li>
         </ul>

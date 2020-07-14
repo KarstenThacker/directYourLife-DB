@@ -11,6 +11,7 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Programs from "./components/pages/Programs";
+import Mentor from './components/pages/Mentor';
 import Resources from "./components/pages/Resources";
 import Contact from './components/pages/Contact';
 import PageNotFound from './components/pages/PageNotFound';
@@ -20,11 +21,14 @@ import Layout from './components/layouts/Layout';
 import './components/pages/Pages.css';
 import Banner  from './components/layouts/Banner';
 import Bookshelf from './components/bookshelf';
+import ScrollToTop from './components/layouts/Scroll';
+import L2LandingPage from "./components/pages/L2LandingPage";
 
 
 function App() {
   return (
     <div>
+      <ScrollToTop/>
       <Navbar />
       <Banner/>
       <Layout>
@@ -33,8 +37,10 @@ function App() {
 					<Route path='/about' component={About} />
 					<Route path='/programs' component={Programs} />
 					<Route path='/resources' component={Resources} />
+          <Route path='/mentor' component={Mentor} />
 					<Route path='/contact' component={Contact} />
 					<Route path='/login' component={Login} />
+          <Route path='/l2landingpage' component={L2LandingPage} />
 					{/* <Route path='/signup' component={Signup} /> */}
           <Route path='/bookshelf' component={Bookshelf} />
 					<Route component={PageNotFound} />
