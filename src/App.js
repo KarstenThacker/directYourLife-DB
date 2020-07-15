@@ -23,6 +23,7 @@ import Banner  from './components/layouts/Banner';
 import Bookshelf from './components/bookshelf';
 import ScrollToTop from './components/layouts/Scroll';
 import L2LandingPage from "./components/pages/L2LandingPage";
+import Login1 from "./components/pages/Login1";
 
 
 function App() {
@@ -43,7 +44,9 @@ function App() {
           <Route path='/l2landingpage' component={L2LandingPage} />
 					{/* <Route path='/signup' component={Signup} /> */}
           <Route path='/bookshelf' component={Bookshelf} />
+          <Route path='/login1' component={Login1} />
 					<Route component={PageNotFound} />
+          
         </Switch>
       </Layout>
       <Footer />

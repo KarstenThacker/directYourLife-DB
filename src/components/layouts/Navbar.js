@@ -55,6 +55,10 @@ const Navbar = () => {
 							<FontAwesomeIcon icon={faHandsHelping} />
 							&nbsp; Become a Mentor
 						</Link>
+            <Link className='nav-link' to='/Mentorform'>
+							{/* <FontAwesomeIcon icon={faQuestionCircle} /> */}
+							
+						</Link>
 					</li>
 					<li className='nav-item'>
 						{/* <Link className='nav-link' to='/Resources'>

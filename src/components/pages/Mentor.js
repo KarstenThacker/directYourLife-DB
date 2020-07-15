@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import Jumbotronmentor from "../layouts/Jumbotronmentor.js";
 import styled from 'styled-components';
-import img23 from "../assets/img23.jpg";
-import img24 from "../assets/img24.jpg";
-import img25 from "../assets/img25.jpg";
+import img36 from "../assets/img36.jpg";
+import img37 from "../assets/img37.jpg";
 import { Link } from 'react-router-dom';
+
 
 const Button = styled.button`
 background-color: #FF8C00;
@@ -19,8 +19,6 @@ transition: ease background-color 250ms;
     background-color: #cc7000;
 }
 margin: 30px;
-
-
 `
 
 
@@ -48,8 +46,8 @@ class About extends Component {
 
             <Col>
               <img
-                src={img23}
-                alt="../assets/img23.jpg"
+                src={img36}
+                alt="../assets/img36.jpg"
                 style={{ width: "400px" }}
               />
             </Col>
@@ -75,8 +73,8 @@ class About extends Component {
 
             <Col>
               <img
-                src={img24}
-                alt="../assets/img24.jpg"
+                src={img37}
+                alt="../assets/img37.jpg"
                 style={{ width: "400px" }}
               />
             </Col>
@@ -87,7 +85,7 @@ class About extends Component {
               <Col>
               <div className="card-footer align-self-center mx-auto">
                   <Button variant="btn btn-primary">
-                    <Link className="nav-link" to="/mentorform">Become a Mentor</Link>
+                    <Link className="nav-link" to="/Login1">Become a Mentor</Link>
                 </Button>
                 </div>
             </Col>

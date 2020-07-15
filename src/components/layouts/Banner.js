@@ -34,7 +34,7 @@ const Jumbotron = () => (
 				<h2>
 					Direct Your Life
 				</h2>
-				<h5>Legal Counselling & Services </h5>
+				<h5>Changing Perspectives. Changing Lives. </h5>
 			</Container>
 		</Jumbo>
 	</Styles>
